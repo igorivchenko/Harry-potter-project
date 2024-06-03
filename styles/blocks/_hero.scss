@@ -1,0 +1,42 @@
+.hero {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, #000 100%),
+    url('/images/cover/cover.jpg');
+  background-position: top 10% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 100px;
+  overflow-y: hidden;
+
+  @include desktop {
+    padding-bottom: 80px;
+  }
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+  @include mobile {
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    @include fluid-text(150, 36);
+
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--color-light);
+    transform: translate(0, 200%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out;
+
+    &--active {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}
