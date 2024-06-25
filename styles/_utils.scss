@@ -4,6 +4,11 @@
   padding-inline: var(--container-padding-x);
 }
 
+.tooltip-accent-color {
+  color: var(--color-main);
+  font-weight: 500;
+}
+
 .visually-hidden {
   @include visually-hidden;
 }

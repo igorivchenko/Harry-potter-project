@@ -1,0 +1,93 @@
+.welcome {
+  background-image: linear-gradient(
+      180deg,
+      #1d1d1d 8.41%,
+      rgba(29, 29, 29, 0.82) 34.44%,
+      rgba(29, 29, 29, 0) 72.88%
+    ),
+    url('/images/welcome/welcome-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  padding-top: 90px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  row-gap: 80px;
+
+  @include mobile {
+    padding-top: 70px;
+    row-gap: 60px;
+    background-position: bottom left 70%;
+  }
+
+  @include mobile-s {
+    padding-top: 50px;
+    row-gap: 40px;
+    background-position: bottom left 79%;
+  }
+
+  &__title {
+    @include fluid-text(80, 20);
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-main);
+    transform: translate(0, -150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 1.2s ease-in-out;
+
+    @include mobile {
+      transform: translate(0, -210%);
+    }
+
+    &--active {
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__button {
+    @include fluid-text(18, 16);
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--color-fourth);
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+    animation: flash 2s infinite alternate;
+
+    @include mobile-s {
+      padding-inline: 18px;
+      height: 50px;
+    }
+
+    @keyframes flash {
+      0% {
+        box-shadow: 0 0 2px 2px var(--color-third);
+      }
+
+      100% {
+        box-shadow: 0 0 6px 6px var(--color-third);
+      }
+    }
+  }
+
+  &__gradient {
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(180deg, #1d1d1d 17.33%, rgba(29, 29, 29, 0) 41.43%);
+    transform: rotate(180deg);
+  }
+}

@@ -10,4 +10,16 @@
 
 // prettier-ignore
 @import 
-'./blocks/hero';
+'./components/all-characters-card',
+'./components/back-arrow',
+'./components/button',
+'./components/personage-card',
+'./components/title',
+'./components/tooltip';
+
+// prettier-ignore
+@import 
+'./blocks/all-characters',
+'./blocks/hero',
+'./blocks/characters',
+'./blocks/welcome';

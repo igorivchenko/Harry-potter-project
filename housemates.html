@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="/images/icons/favicon.svg" />
+  </head>
+  <body>
+    <a class="back-arrow" href="./welcome.html" title="Back to all characters">
+      <svg
+        version="1.1"
+        id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="44"
+        height="44"
+        viewBox="0 0 414.34 414.34"
+        xml:space="preserve"
+      >
+        <g>
+          <path
+            d="M6.076,162.616L183.835,58.601c3.795-2.222,8.485-2.241,12.304-0.057c3.815,2.187,6.17,6.246,6.174,10.644l0.036,46.966
+  		c0.213,0.052,0.38,0.094,0.495,0.126c4.441,1.239,9.163,2.603,14.854,4.294c18.457,5.483,37.417,12.593,59.668,22.374
+  		c19.31,8.487,38.2,19.442,56.149,32.559c12.826,9.373,24.895,20.182,35.867,32.126c29.857,32.497,46.216,75.647,44.881,118.391
+  		c-0.233,7.489-1.076,14.674-1.869,20.716c-0.787,6.008-5.84,10.542-11.897,10.678c-0.093,0.002-0.187,0.003-0.277,0.003
+  		c-5.939,0-11.048-4.263-12.086-10.14c-3.304-18.678-8.574-34.021-16.111-46.909c-9.42-16.104-22.223-29.625-37.021-39.103
+  		c-12.718-8.145-26.153-14.396-41.075-19.113c-17.405-5.503-36.597-8.951-58.671-10.545c-8.906-0.643-18.502-0.967-30.2-1.02
+  		c-0.354,0-1.112,0.007-2.098,0.019l-0.032,44.29c-0.004,4.372-2.332,8.413-6.113,10.608c-3.782,2.196-8.446,2.214-12.245,0.048
+  		L6.196,183.879c-3.81-2.172-6.172-6.21-6.196-10.597C-0.025,168.897,2.291,164.832,6.076,162.616z"
+          />
+        </g>
+      </svg>
+    </a>
+    <main class="characters">
+      <div class="characters__container container">
+        <h1 class="characters__title title">Characters in a certain house</h1>
+        <div class="characters__nav">
+          <ul class="characters__nav-list">
+            <li class="characters__nav-item">
+              <button class="characters__nav-button" type="button">
+                <img
+                  class="characters__nav-image"
+                  src="./images/icons/Gryffindor-icon.png"
+                  alt=""
+                />
+                <span>Gryffindor</span>
+              </button>
+            </li>
+            <li class="characters__nav-item">
+              <button class="characters__nav-button" type="button">
+                <img class="characters__nav-image" src="./images/icons/Slytherin-icon.png" alt="" />
+                <span>Slytherin</span>
+              </button>
+            </li>
+            <li class="characters__nav-item">
+              <button class="characters__nav-button" type="button">
+                <img class="characters__nav-image" src="./images/icons/Ravenclaw-icon.png" alt="" />
+                <span>Ravenclaw</span>
+              </button>
+            </li>
+            <li class="characters__nav-item">
+              <button class="characters__nav-button" type="button">
+                <img
+                  class="characters__nav-image"
+                  src="./images/icons/Hufflepuff-icon.png"
+                  alt=""
+                />
+                <span>Hufflepuff</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <ul class="characters__list">
+          <li class="characters__item">
+            <article
+              class="personage-card"
+              data-name="Harry Potter"
+              data-alternate-names="The Boy Who Lived, The Chosen One"
+              data-species="Human"
+              data-gender="Male"
+              data-house="Gryffindor"
+              data-birthday="31-07-1980"
+              data-year="1980"
+              data-wizard="True"
+              data-ancestry="Half-blood"
+              data-eye-color="Bright green"
+              data-hair-color="Jet-black"
+              data-wand="Wood : holly, core : phoenix feather, length : 11"
+              data-patronus="Stag"
+              data-student="True"
+              data-staff="False"
+              data-actor="Daniel Radcliff"
+              data-alive="True"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/students/Harry-Potter.jpg"
+                alt="Harry Potter photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Harry Potter</h2>
+                <div class="personage-card__text">The Boy Who Lived</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">31-07-1980</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li class="characters__item">
+            <article
+              class="personage-card"
+              data-name="Hermione Granger"
+              data-alternate-names="The Girl Who Lived, The Chosen One"
+              data-species="Human"
+              data-gender="Female"
+              data-house="Gryffindor"
+              data-birthday="19-09-1979"
+              data-year="1979"
+              data-wizard="True"
+              data-ancestry="Muggle-born"
+              data-eye-color="Brown"
+              data-hair-color="Brown"
+              data-wand="10¾, Vine, dragon heartstring"
+              data-patronus="Otter"
+              data-student="True"
+              data-staff="False"
+              data-actor="Emma Watson"
+              data-alive="True"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/students/Hermione-Granger.jpg"
+                alt="Hermione Granger photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Hermione Granger</h2>
+                <div class="personage-card__text">The Girl Who Lived</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">19-09-1979</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li class="characters__item">
+            <article
+              class="personage-card"
+              data-name="Ron Weasley"
+              data-alternate-names="The Boy Who Lived, The Chosen One"
+              data-species="Human"
+              data-gender="Male"
+              data-house="Gryffindor"
+              data-birthday="01-03-1980"
+              data-year="1980"
+              data-wizard="True"
+              data-ancestry="Pure-blood"
+              data-eye-color="Blue"
+              data-hair-color="Red"
+              data-wand="Wood : holly, core : phoenix feather, length : 11"
+              data-patronus="Jack Russell terrier"
+              data-student="True"
+              data-staff="False"
+              data-actor="Rupert Grint"
+              data-alive="True"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/students/Ron-Weasley.jpg"
+                alt="Ron Weasley photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Ron Weasley</h2>
+                <div class="personage-card__text">Dragomir Despard</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">01-03-1980</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li class="characters__item">
+            <article
+              class="personage-card"
+              data-name="Minerva McGonagall"
+              data-alternate-names="The Woman Who Lived, The Chosen One"
+              data-species="Human"
+              data-gender="Female"
+              data-house="Gryffindor"
+              data-birthday="4-10-1925"
+              data-year="1925"
+              data-wizard="True"
+              data-ancestry="Half-blood"
+              data-eye-color="Green"
+              data-hair-color="Black"
+              data-wand="Wood : holly, core : phoenix feather, length : 11"
+              data-patronus="Tabby cat"
+              data-student="False"
+              data-staff="True"
+              data-actor="Maggie Smith"
+              data-alive="True"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/employees/Minerva.jpg"
+                alt="Minerva McGonagall photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Minerva McGonagall</h2>
+                <div class="personage-card__text">The Woman Who Lived</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">4-10-1925</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li class="characters__item">
+            <article
+              class="personage-card personage-card--active"
+              data-name="Rubeus Hagrid"
+              data-alternate-names="Dragomir Despard"
+              data-species="Human"
+              data-gender="Male"
+              data-house="Gryffindor"
+              data-birthday="06-12-1928"
+              data-year="1928"
+              data-wizard="True"
+              data-ancestry="Half-blood"
+              data-eye-color="Green"
+              data-hair-color="Black"
+              data-wand="Wood : holly, core : phoenix feather, length : 11"
+              data-patronus="Did not have"
+              data-student="False"
+              data-staff="True"
+              data-actor="Robbie Coltrane"
+              data-alive="False"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/employees/Rubeus.jpg"
+                alt="Rubeus Hagrid photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Rubeus Hagrid</h2>
+                <div class="personage-card__text">Dragomir Despard</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">06-12-1928</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li class="characters__item">
+            <article
+              class="personage-card personage-card--active"
+              data-name="Neville Longbottom"
+              data-alternate-names="The Boy Who Lived, The Chosen One"
+              data-species="Human"
+              data-gender="Male"
+              data-house="Gryffindor"
+              data-birthday="30-07-1980"
+              data-year="1980"
+              data-wizard="True"
+              data-ancestry="Pure-blood"
+              data-eye-color="Green"
+              data-hair-color="Blond"
+              data-wand="Father's wand (formerly), Unknown length, Cherry, unicorn hair"
+              data-patronus="Bear"
+              data-student="True"
+              data-staff="False"
+              data-actor="Matthew Lewis"
+              data-alive="True"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/students/Neville-Longbottom.jpg"
+                alt="Neville Longbottom photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Neville Longbottom</h2>
+                <div class="personage-card__text">The Boy Who Lived</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">30-07-1980</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li class="characters__item">
+            <article
+              class="personage-card personage-card--active"
+              data-name="Ginny Weasley"
+              data-alternate-names="The Girl Who Lived, The Chosen One"
+              data-species="Human"
+              data-gender="Female"
+              data-house="Gryffindor"
+              data-birthday="11-08-1981"
+              data-year="1981"
+              data-wizard="True"
+              data-ancestry="Pure-blood or half-blood"
+              data-eye-color="Dark"
+              data-hair-color="Black"
+              data-wand="Unknown length, wood and core"
+              data-patronus="Horse"
+              data-student="True"
+              data-staff="False"
+              data-actor="Bonnie Wright"
+              data-alive="True"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/students/Ginny-Weasley.jpg"
+                alt="Ginny Weasley photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Ginny Weasley</h2>
+                <div class="personage-card__text">The Girl Who Lived</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">11-08-1981</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+          <li class="characters__item">
+            <article
+              class="personage-card personage-card--active"
+              data-name="Sirius Black"
+              data-alternate-names="Padfoot, Snuffles"
+              data-species="Human"
+              data-gender="Male"
+              data-house="Gryffindor"
+              data-birthday="03-11-1959"
+              data-year="1959"
+              data-wizard="True"
+              data-ancestry="Pure-blood"
+              data-eye-color="Grey"
+              data-hair-color="Black"
+              data-wand="Unknown length, wood and core"
+              data-patronus="Did not have"
+              data-student="False"
+              data-staff="True"
+              data-actor="Robbie Coltrane"
+              data-alive="False"
+            >
+              <img
+                class="personage-card__photo"
+                src="./images/employees/Sirius.jpg"
+                alt="Sirius Black photo"
+                width="295"
+                height="450"
+                loading="lazy"
+              />
+              <div class="personage-card__container">
+                <h2 class="personage-card__title">Sirius Black</h2>
+                <div class="personage-card__text">The Man Who Died</div>
+                <div class="personage-card__school">Gryffindor</div>
+                <div class="personage-card__birthday">03-11-1959</div>
+              </div>
+              <a class="personage-card__button" href="#">
+                <span class="personage-card__button-label">More information</span>
+                <span class="personage-card__button-wrapper">
+                  <svg
+                    width="24"
+                    height="14"
+                    viewBox="0 0 24 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 -3.49691e-07C16 0.742 16.733 1.85 17.475 2.78C18.429 3.98 19.569 5.027 20.876 5.826C21.856 6.425 23.044 7 24 7M24 7C23.044 7 21.855 7.575 20.876 8.174C19.569 8.974 18.429 10.021 17.475 11.219C16.733 12.15 16 13.26 16 14M24 7L-3.0598e-07 7"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="tooltip">
+      <div class="tooltip__name">
+        Name: <span class="tooltip-accent-color" id="tooltip-name"></span>
+      </div>
+      <div class="tooltip__alternate-name">
+        Alternate names: <span class="tooltip-accent-color" id="tooltip-alternate-names"></span>
+      </div>
+      <div class="tooltip__species">
+        Species: <span class="tooltip-accent-color" id="tooltip-species"></span>
+      </div>
+      <div class="tooltip__gender">
+        Gender: <span class="tooltip-accent-color" id="tooltip-gender"></span>
+      </div>
+      <div class="tooltip__house">
+        House: <span class="tooltip-accent-color" id="tooltip-house"></span>
+      </div>
+      <div class="tooltip__birthday">
+        Date of birth: <span class="tooltip-accent-color" id="tooltip-birthday"></span>
+      </div>
+      <div class="tooltip__year">
+        Year of birth: <span class="tooltip-accent-color" id="tooltip-year"></span>
+      </div>
+      <div class="tooltip__wizard">
+        Wizard: <span class="tooltip-accent-color" id="tooltip-wizard"></span>
+      </div>
+      <div class="tooltip__ancestry">
+        Ancestry: <span class="tooltip-accent-color" id="tooltip-ancestry"></span>
+      </div>
+      <div class="tooltip__eye-color">
+        Eye color: <span class="tooltip-accent-color" id="tooltip-eye-color"></span>
+      </div>
+      <div class="tooltip__hair-color">
+        Hair color: <span class="tooltip-accent-color" id="tooltip-hair-color"></span>
+      </div>
+      <div class="tooltip__wand">
+        Wand:
+        <span class="tooltip-accent-color" id="tooltip-wand"></span>
+      </div>
+      <div class="tooltip__patronus">
+        Patronus: <span class="tooltip-accent-color" id="tooltip-patronus"></span>
+      </div>
+      <div class="tooltip__character">
+        Hogwarts character: <span class="tooltip-accent-color" id="tooltip-character"></span>
+      </div>
+      <div class="tooltip__staff">
+        Hogwarts staff: <span class="tooltip-accent-color" id="tooltip-staff"></span>
+      </div>
+      <div class="tooltip__actor">
+        Actor: <span class="tooltip-accent-color" id="tooltip-actor"></span>
+      </div>
+      <div class="tooltip__alive">
+        Alive: <span class="tooltip-accent-color" id="tooltip-alive"></span>
+      </div>
+    </div>
+
+    <script src="js/characters-title.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/scrolldown.js"></script>
+  </body>
+</html>
