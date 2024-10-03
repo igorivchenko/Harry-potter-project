@@ -11,5 +11,3 @@ const buttonToggle = () => {
 };
 
 buttonOpen.addEventListener('click', buttonToggle);
-
-updateOverflow();
